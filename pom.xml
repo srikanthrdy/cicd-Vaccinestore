@@ -169,7 +169,7 @@
 					<version>1.0.0</version>
 					<configuration>
 						<lifecycleMappingMetadata>
-							<pluginExecutions>
+:1							<pluginExecutions>
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>
