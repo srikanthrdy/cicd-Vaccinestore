@@ -20,7 +20,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-    background-color: blue;
+    background-color:  #00CC00;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -51,7 +51,7 @@ span.psw {
 }
 </style>
 </head>
-<body>
+<body style="background-color:#99FF00">
 	<h1>Registration Form</h1>
 	<form action="Register" method="post">
 	  <div class="container">

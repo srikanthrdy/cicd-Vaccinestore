@@ -25,6 +25,18 @@
 		<servlet-name>GetPassword</servlet-name>
 		<servlet-class>devops.Capstone.controllerWithoutDb.UserPasswordController</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>India</servlet-name>
+		<servlet-class>devops.Capstone.controllerWithoutDb.IndiaController</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>America</servlet-name>
+		<servlet-class>devops.Capstone.controllerWithoutDb.AmericaController</servlet-class>
+	</servlet>
+	
+
 
 	<servlet-mapping>
 		<servlet-name>Login</servlet-name>
@@ -37,5 +49,13 @@
 	<servlet-mapping>
 		<servlet-name>GetPassword</servlet-name>
 		<url-pattern>/GetPassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>India</servlet-name>
+		<url-pattern>/India</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>America</servlet-name>
+		<url-pattern>/America</url-pattern>
 	</servlet-mapping>
 </web-app>

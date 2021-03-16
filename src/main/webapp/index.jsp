@@ -18,7 +18,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-    background-color:blue ;
+    background-color:orange ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -49,7 +49,7 @@ span.psw {
 }
 </style>
 </head>
-<body>
+<body style="background-color: 	#CCFF33">
 	<h1>TheVaccineStore</h1>
 	<form action="Login" method="post">
 	  <div class="container" >

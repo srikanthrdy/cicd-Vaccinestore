@@ -2,10 +2,6 @@ package devops.Capstone.controllerWithoutDb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +12,11 @@ import devops.Capstone.model.User;
 import devops.Capstone.service.UserService;
 
 public class UserRegisterController extends HttpServlet{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 
 		  response.setContentType("text/html");
@@ -39,7 +40,7 @@ public class UserRegisterController extends HttpServlet{
 			  User portalNewUser=new User(fname,lname,pass,email);
 			
 			    if(new UserService().doRegistration(portalNewUser)){   
-				    pout.write("Successfuly registered...");
+				    pout.write("Successfully registered...");
 				    RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
 				    rd.forward(request, response);
 			    }

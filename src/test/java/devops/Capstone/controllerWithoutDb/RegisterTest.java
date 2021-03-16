@@ -44,7 +44,7 @@ public class RegisterTest extends Mockito{
         verify(rd).forward(request, response);
         
         String result = stringWriter.getBuffer().toString().trim();
-        assertEquals("Successfuly registered...", result);
+        assertEquals("Successfully registered...", result);
       
     }
     

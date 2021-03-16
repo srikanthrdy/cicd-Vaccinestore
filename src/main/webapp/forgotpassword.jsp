@@ -20,7 +20,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-    background-color: blue;
+    background-color: #FFCCCC;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -51,7 +51,7 @@ span.psw {
 }
 </style>
 </head>
-<body>
+<body style="background-color:#FF9900">
 	<h1>ForgotPassword</h1>	
 	<form action="GetPassword" method="post">
 	  <div class="container">
