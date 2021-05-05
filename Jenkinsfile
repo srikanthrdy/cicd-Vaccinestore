@@ -3,22 +3,22 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-               sh "/usr/share/maven/bin/mvn clean"
+               sh "mvn clean"
              }
          }
         stage('Build') {
             steps {
-               sh "/usr/share/maven/bin/mvn compile"
+               sh "mvn compile"
              } 
          } 
         stage('Test') {
             steps {
-               sh "/usr/share/maven/bin/mvn test"
+               sh "mvn test"
              }
          } 
         stage('Verify') {
             steps {
-               sh "/usr/share/maven/bin/mvn verify"
+               sh "mvn verify"
             }
          }
      }
