@@ -13,7 +13,7 @@ pipeline {
          } 
         stage('Test') {
             steps {
-               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn  test"
+               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn  test -DskipTests=true"
              }
          } 
         stage('Verify') {
