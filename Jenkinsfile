@@ -18,7 +18,7 @@ pipeline {
          } 
         stage('Verify') {
             steps {
-               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn  verify"
+               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn  verify -DskipTests=true"
             }
          }
      }
